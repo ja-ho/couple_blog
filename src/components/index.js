@@ -1,3 +1,7 @@
 import Index from './Index/';
+import Album from './Album';
 
-export default Index;
+export {
+    Index,
+    Album
+};
