@@ -5,7 +5,11 @@ import { Card, CardImg, CardText, CardBlock, CardTitle, CardSubtitle, Button,
 export default class Album extends PureComponent {
     render() {
         return (
-            <div className="content"
+            <container>
+                <Row>
+                    <col>
+                </Row>
+            </container>
         );
     }
 }
