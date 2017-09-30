@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 
-import {IndexContainer, AlbumContainer} from './containers';
+import {IndexContainer, AlbumContainer, BoardContainer} from './containers';
 
 import 'bootstrap/dist/css/bootstrap.css';
 
@@ -13,6 +13,7 @@ class routes extends PureComponent{
                 <div>
                     <Route exact path="/" component={IndexContainer} />
                     <Route path="/album" component={AlbumContainer} />
+                    <Route path="/board" component={BoardContainer} />
                 </div>
             </Router>
         );
