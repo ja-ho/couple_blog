@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import { Link } from 'react-router-dom';
 
 export default class NavBar extends PureComponent {
   render() {
@@ -15,10 +16,10 @@ export default class NavBar extends PureComponent {
               <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Link</a>
+              <Link to="/board" className="nav-link" href="#">우리만의 100일간의 일기장</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link disabled" href="#">Disabled</a>
+              <Link to="/album" className="nav-link" href="#">커플 앨범</Link>
             </li>
           </ul>
           <form className="form-inline my-2 my-lg-0">
